@@ -1,17 +1,17 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+    <ion-title class="hdTitle">Upcoming Exhibitions</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content>
+    <ion-card *ngFor="let exhibition of exhibitions">
+      <ion-card-header>
+        <h1 class="exTitle">{{ exhibition.title }}</h1>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="date">{{ exhibition.date }}</p>
+        <p class="location">{{ exhibition.location }}</p>
+      </ion-card-content>
+    </ion-card>
 </ion-content>

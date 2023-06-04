@@ -1,0 +1,54 @@
+$Medium: Comfortaa-Medium;
+$Bold: Comfortaa-Bold;
+$Normal: Comfortaa;
+$Mar_Pad_10: 10px;
+
+.hdTitle{
+  font-family: $Bold;
+}
+
+.question, .submit, p {
+  font-family: $Bold;
+}
+
+.options{
+  font-family: $Medium;
+}
+
+ion-card {
+  margin: $Mar_Pad_10;
+}
+
+ion-card-header {
+  background-color: #f8f8f8;
+  padding: 10px;
+  font-family: $Bold;
+}
+
+ion-card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+ion-card-content {
+  padding: $Mar_Pad_10;
+}
+
+ion-list {
+  margin: 0;
+  padding: 0;
+}
+
+ion-item {
+  padding: $Mar_Pad_10;
+}
+
+ion-checkbox {
+  margin-right: $Mar_Pad_10;
+}
+
+ion-button {
+  margin: $Mar_Pad_10 0;
+  --background: rgb(228, 107, 21);
+}

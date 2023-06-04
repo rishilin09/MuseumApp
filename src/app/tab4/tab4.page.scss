@@ -1,0 +1,47 @@
+$txtCenter: center;
+$Medium: Comfortaa-Medium;
+$Bold: Comfortaa-Bold;
+
+
+.hdTitle{
+    font-family: Comfortaa-Bold;
+}
+
+  .inpFTxt, .inpNTxt{
+    font-family: $Medium;
+  }
+
+  .feedback, .name{
+    border: 4px purple double;
+    margin-bottom: 2rem;
+  }
+  
+  .inpFTxt{
+    height: 150px;
+  }
+
+  .subButton {
+    display: flex;
+    justify-content: $txtCenter;
+    margin-top: 1.5rem;
+    
+    ion-button {
+        width: 60%;
+        --background: green;
+    }
+  }
+  
+  .errorMsg {
+    text-align: $txtCenter;
+    font-size: 18px;
+    margin-top: 0.5rem;
+    color: red;
+    margin: 4px;
+  }
+  
+  .inpTitle{
+    margin: 0.8em;
+    text-align: $txtCenter;
+    font-family: $Bold;
+    font-size: 40px;
+  }

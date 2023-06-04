@@ -1,0 +1,30 @@
+$Medium: Comfortaa-Medium;
+$Bold: Comfortaa-Bold;
+$Normal: Comfortaa;
+$blackShade: #1e0505;
+
+.hdTitle{
+    font-family: $Bold;
+}
+
+.exTitle{
+    margin-top: -0.05em;
+    font-family: $Bold;
+    font-size: 24px;
+    color: red;
+}
+
+.date{
+    font-family: $Medium;
+    font-size: 18px;
+    color: $blackShade;
+}
+
+.location{
+    font-family: $Normal;
+}
+
+ion-card{
+    border-radius: 10px;
+    border: 5px double;
+}

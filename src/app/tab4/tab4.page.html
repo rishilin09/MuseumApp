@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="hdTitle">Feedback</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form [formGroup]="feedbackForm" (ngSubmit)="submitForm()">
+    <h1 class="inpTitle" position="floating" >Name</h1>
+    <ion-card class="name">
+      <ion-card-content>
+        <ion-item>
+          <ion-input class="inpNTxt" formControlName="name" type="text" placeholder="Enter your name"></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <h1 class="errorMsg" *ngIf="feedbackForm.get('name')!.errors?.['required'] && feedbackForm.get('name')!.touched && feedbackForm.get('feedback')!.dirty">
+      Please enter your name.
+    </h1>
+    <h1 class="errorMsg" *ngIf="feedbackForm.get('name')!.errors?.['invalidName']">
+      Please enter a valid name with only alphabets.
+    </h1>
+
+   
+    <h1 class="inpTitle" position="floating">Feedback</h1>
+    <ion-card class="feedback">
+      <ion-card-content>
+        <ion-item>
+          <ion-textarea class="inpFTxt" formControlName="feedback" placeholder="Enter Feedback here!!"></ion-textarea>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <h1 class="errorMsg" color="danger" *ngIf="feedbackForm.get('feedback')!.errors?.['required'] && feedbackForm.get('name')!.touched">
+      Please enter your feedback!!!
+    </h1>
+    <div class="subButton">
+      <ion-button type="submit" [disabled]="!feedbackForm.valid">
+        Submit
+      </ion-button>
+    </div>
+  </form>
+</ion-content>

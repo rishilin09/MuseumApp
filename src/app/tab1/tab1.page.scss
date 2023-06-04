@@ -1,0 +1,55 @@
+$Light: Comfortaa-Light;
+$Bold: Comfortaa-Bold;
+$SemiBold: Comfortaa-SemiBold;
+$flex: flex;
+$center: center;
+
+.title{
+    display: $flex; 
+    flex-direction: column;
+    justify-content: $center; 
+    align-items: $center; 
+    font-family: $Bold;
+    margin: 2em auto;
+}
+
+.title ion-title{
+    font-size: 2em;
+}
+
+.popularArtifactsTitle{
+    display: $flex;
+    flex-direction: column; 
+    justify-content: $center;
+    margin: 2.5em auto; 
+    font-family: $Light;
+}
+
+.popularArtifactsTitle ion-title{
+    font-size: 1.2em;
+}
+
+.artifactList ion-card{
+    border-radius: 2em;
+    height: auto;
+    border: 5px blueviolet double;
+}
+
+.artifactTitle{
+    font-size: 1.8em;
+    margin: 0.5em auto;
+    font-family: $Bold;
+    color: rgb(243, 31, 20);
+}
+
+.text-part1 {
+    margin-top: 1em;
+}
+
+.text-part1, .text-part2{
+    font-size: 1.3em;
+    font-style: italic;
+    display: block;
+    font-family: $SemiBold;
+    color: red;
+}

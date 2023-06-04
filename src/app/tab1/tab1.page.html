@@ -1,17 +1,30 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Home-Page</ion-title>
     </ion-toolbar>
   </ion-header>
+  <div class="title">
+    <ion-title>NATIONAL MUSEUM</ion-title>
+    <!-- <ion-title>BRITISH NATIONAL MUSEUM</ion-title> -->
+    <ion-title>Mumbai</ion-title>
+  </div>
+  <div class="popularArtifactsTitle">
+    <ion-title>This are some popular atrifacts!!</ion-title>
+  </div>
+  <div class="artifactList">
+    <ion-card *ngFor="let item of listOfItems">
+      <ion-card-header>
+        <ion-card-title class="artifactTitle">{{ item.name }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="artifactImg">
+          <ion-img [src] = "item.img"></ion-img>
+        </div>
+        <p class="text-part1">{{ item.description }}</p>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+      </ion-card-content>
+      
+    </ion-card>
+  </div>
 </ion-content>
